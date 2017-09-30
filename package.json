@@ -1,0 +1,27 @@
+{
+  "name": "Simulation_1_Backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoltWright/Simulation_1_Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KoltWright/Simulation_1_Backend/issues"
+  },
+  "homepage": "https://github.com/KoltWright/Simulation_1_Backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.1",
+    "massive": "^4.3.0"
+  }
+}
