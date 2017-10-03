@@ -18,6 +18,8 @@ app.use(cors());
 app.get('/api/bin/:id', sc.getBin);
 app.put('/api/bin/:id', sc.updateBin);
 app.delete('/api/bin/:id', sc.deleteBin);
+app.post('/api/bin/:id', sc.createBin);
+app.get('/api/shelf/:id', sc.getShelf);
 
 const port = 3005;
 app.listen(port, () => {
