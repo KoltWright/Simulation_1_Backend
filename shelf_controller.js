@@ -56,10 +56,17 @@ module.exports = {
   getShelf: (req, res, next) => {
     const dbInstance = req.app.get('db');
     const shelf = req.params.id;
-    console.log(shelf);
 
     dbInstance.get_shelf({shelf})
       .then((shelfBins) => {
+        for (i=0; i < shelfBins.length; i++) {
+          if (shelfBins[i].bin !== i + 1) {
+            shelfBins.splice(i, 0, null);
+          }
+        }
+        if (shelfBins.length === 0) {
+          shelfBins = [null, null, null, null, null]
+        }
         res.status(200).send(shelfBins);
       })
       .catch((err) => {

@@ -21,7 +21,7 @@ app.delete('/api/bin/:id', sc.deleteBin);
 app.post('/api/bin/:id', sc.createBin);
 app.get('/api/shelf/:id', sc.getShelf);
 
-const port = 3005;
+const port = 3006;
 app.listen(port, () => {
   console.log(`I am listening on ${port}`)
 });
